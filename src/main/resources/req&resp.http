@@ -1,0 +1,41 @@
+###получения всех студентов
+GET http://localhost:8080/students
+Accept: application/json
+
+###получение списка студентов не оплативших курс
+GET http://localhost:8080/students/search/findStudentsByPaymentIsFalse
+Accept: application/json
+
+###получение студента по имени
+GET http://localhost:8080/students/search/findStudentByName?name=Сара
+Accept: application/json
+
+###получение списка студентов по номеру группы
+GET http://localhost:8080/groups/3/students
+Accept: application/json
+
+###получение студента по фамилии
+GET http://localhost:8080/students/search/findStudentBySurname?surname=Джонсон
+Accept: application/json
+
+###изменение информации о студенте
+PATCH http://localhost:8080/students/1
+Content-Type: application/json
+
+{
+  "payment": false
+}
+
+###удаление информации о студенте
+DELETE http://localhost:8080/students/14
+Content-Type: application/json
+
+###добавление нового студента
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "name": "Сид",
+  "surname": "Шоумэн",
+  "payment": true
+}
