@@ -3,19 +3,19 @@ GET http://localhost:8080/students
 Accept: application/json
 
 ###получение списка студентов не оплативших курс
-GET http://localhost:8080/students/search/findStudentsByPaymentIsFalse
+GET http://localhost:8080/students/search/findByPaymentIsFalse
 Accept: application/json
 
-###получение студента по имени
-GET http://localhost:8080/students/search/findStudentByName?name=Сара
+###получение студентов по имени
+GET http://localhost:8080/students/search/findByName?name=Сара
 Accept: application/json
 
 ###получение списка студентов по номеру группы
 GET http://localhost:8080/groups/3/students
 Accept: application/json
 
-###получение студента по фамилии
-GET http://localhost:8080/students/search/findStudentBySurname?surname=Джонсон
+###получение студентов по фамилии
+GET http://localhost:8080/students/search/findBySurname?surname=Джонсон
 Accept: application/json
 
 ###изменение информации о студенте

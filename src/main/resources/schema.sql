@@ -5,7 +5,7 @@ create table if not exists student_group
     primary key (id)
 );
 
-create table if not exists student
+create table if not exists students
 (
     id       int not null auto_increment,
     name     varchar(45),

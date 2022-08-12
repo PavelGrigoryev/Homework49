@@ -24,7 +24,7 @@ public class Group {
     private String name;
 
     @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.REFRESH, CascadeType.MERGE},
-            mappedBy = "studentGroup")
+            mappedBy = "group")
     @ToString.Exclude
     private List<Student> students;
 

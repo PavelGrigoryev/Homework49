@@ -7,11 +7,8 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Getter
-@Setter
-@ToString
-@RequiredArgsConstructor
-@Table(name = "student")
+@Data
+@Table(name = "students")
 public class Student {
 
     @Id
@@ -31,7 +28,7 @@ public class Student {
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.DETACH, CascadeType.REFRESH, CascadeType.MERGE})
     @JoinColumn(name = "group_id")
     @ToString.Exclude
-    private Group studentGroup;
+    private Group group;
 
     @Override
     public boolean equals(Object o) {
