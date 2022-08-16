@@ -1,4 +1,4 @@
-create table if not exists student_group
+create table if not exists student_groups
 (
     id   int not null auto_increment,
     name varchar(45),
@@ -13,5 +13,5 @@ create table if not exists students
     payment  boolean,
     group_id int,
     primary key (id),
-    foreign key (group_id) references my_db.student_group (id)
+    foreign key (group_id) references my_db.student_groups (id)
 );

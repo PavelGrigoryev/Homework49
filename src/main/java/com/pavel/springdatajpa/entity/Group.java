@@ -1,4 +1,4 @@
-package com.pavel.springdatajparest.entity;
+package com.pavel.springdatajpa.entity;
 
 import lombok.*;
 import org.hibernate.Hibernate;
@@ -7,12 +7,9 @@ import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
 
+@Data
 @Entity
-@Getter
-@Setter
-@ToString
-@RequiredArgsConstructor
-@Table(name = "student_group")
+@Table(name = "student_groups")
 public class Group {
 
     @Id

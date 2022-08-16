@@ -1,6 +1,6 @@
-insert into student_group(name) values ('Змеи');
-insert into student_group(name) values ('Петухи');
-insert into student_group(name) values ('Жабы');
+insert into student_groups(name) values ('Змеи');
+insert into student_groups(name) values ('Петухи');
+insert into student_groups(name) values ('Жабы');
 
 insert into students (name, surname, payment, group_id) values ('Павел', 'Петрович', true, 1);
 insert into students (name, surname, payment, group_id) values ('Светлана', 'Афро', false, 1);

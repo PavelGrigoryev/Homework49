@@ -1,4 +1,4 @@
-package com.pavel.springdatajparest;
+package com.pavel.springdatajpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

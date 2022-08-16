@@ -3,7 +3,7 @@ GET http://localhost:8080/students
 Accept: application/json
 
 ###получение списка студентов не оплативших курс
-GET http://localhost:8080/students/search/findByPaymentIsFalse
+GET http://localhost:8080/students/search/findByPayment?payment=false
 Accept: application/json
 
 ###получение студентов по имени

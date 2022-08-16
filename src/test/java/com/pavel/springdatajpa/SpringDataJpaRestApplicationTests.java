@@ -1,4 +1,4 @@
-package com.pavel.springdatajparest;
+package com.pavel.springdatajpa;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

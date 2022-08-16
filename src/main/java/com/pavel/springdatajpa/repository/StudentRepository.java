@@ -1,13 +1,13 @@
-package com.pavel.springdatajparest.repository;
+package com.pavel.springdatajpa.repository;
 
-import com.pavel.springdatajparest.entity.Student;
+import com.pavel.springdatajpa.entity.Student;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.util.List;
 
 public interface StudentRepository extends PagingAndSortingRepository<Student, Integer> {
 
-    List<Student> findByPaymentIsFalse();
+    List<Student> findByPayment(Boolean payment);
 
     List<Student> findByName(String name);
 
